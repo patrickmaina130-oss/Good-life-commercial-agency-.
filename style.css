@@ -89,4 +89,41 @@ SECTION 2: PREMIUM HEADER & NAVIGATION
     border-radius: 50%;
     cursor: pointer;
   }
+/*==================================================
+SECTION 3: HERO STYLING
+==================================================*/
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 5%;
+    background: #081426;
+    color: #fff;
+    min-height: 80vh;
+}
+
+.hero-content { flex: 1; padding-right: 50px; }
+.hero-badge { background: #d4af37; padding: 5px 15px; border-radius: 20px; font-size: 14px; display: inline-block; margin-bottom: 20px; }
+.hero-content h1 { font-size: 55px; line-height: 1.2; margin-bottom: 20px; }
+.hero-content h1 span { color: #d4af37; }
+.hero-content p { color: #ccc; margin-bottom: 30px; font-size: 18px; }
+
+.hero-cta { display: flex; gap: 15px; margin-bottom: 40px; }
+.btn-primary { padding: 15px 30px; background: #d4af37; color: #fff; text-decoration: none; border-radius: 30px; font-weight: 600; }
+.btn-secondary { padding: 15px 30px; border: 2px solid #d4af37; color: #fff; text-decoration: none; border-radius: 30px; font-weight: 600; }
+
+.hero-stats { display: flex; gap: 40px; }
+.hero-stats h3 { font-size: 32px; color: #d4af37; }
+
+.hero-image { flex: 1; }
+.hero-image img { width: 100%; border-radius: 20px; box-shadow: 0 20px 40px rgba(0,0,0,0.3); }
+
+/* Responsive Adjustment */
+@media (max-width: 768px) {
+    .hero { flex-direction: column; text-align: center; }
+    .hero-content { padding-right: 0; margin-bottom: 40px; }
+    .hero-cta { justify-content: center; }
+    .hero-stats { justify-content: center; }
+}
+
              

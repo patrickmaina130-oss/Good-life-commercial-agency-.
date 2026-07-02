@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="description"
+      content="Good Life Commercial Agencies - Tours, Hotels, Vehicle Hire, Real Estate, Corporate Travel & Community Services">
+
+<meta name="keywords"
+      content="Tours, Hotels, Safaris, Kenya, Vehicle Hire, Real Estate, Corporate Travel">
+
+<title>Good Life Commercial Agencies</title>
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet">
+
+<!-- Font Awesome -->
+<link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+<!-- Tailwind -->
+<script src="https://cdn.tailwindcss.com"></script>
+
+<script>
+tailwind.config = {
+    theme: {
+        extend: {
+            fontFamily: {
+                poppins: ["Poppins", "sans-serif"]
+            },
+            colors: {
+                primary: "#081426",
+                secondary: "#0F4C81",
+                gold: "#D4AF37"
+            }
+        }
+    }
+}
+</script>
+
+<link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body class="font-poppins bg-slate-100 text-slate-900 overflow-x-hidden">
+
+<!-- ================= HEADER ================= -->
+<header class="sticky top-0 z-50 bg-white shadow">
+
+<div class="max-w-7xl mx-auto flex justify-between items-center px-4 h-20">
+
+<!-- Logo -->
+<div class="font-bold text-primary text-xl">
+Good Life Agencies
+</div>
+
+<!-- Nav -->
+<nav class="hidden md:flex gap-6">
+<a href="#" class="hover:text-gold">Home</a>
+<a href="#marketplace">Marketplace</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<!-- Contact -->
+<div class="text-sm text-right hidden md:block">
+<div>📞 +254705365075</div>
+<div>✉️ lennyotwombe87@gmail.com</div>
+</div>
+
+</div>
+
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="relative h-[80vh] flex items-center justify-center text-center bg-primary text-white">
+
+<div>
+<h1 class="text-5xl font-bold">Explore Kenya With Us</h1>
+<p class="mt-4 text-lg">Tours • Hotels • Vehicles • Real Estate</p>
+
+<a href="#marketplace"
+   class="mt-6 inline-block bg-gold text-primary px-6 py-3 rounded-full font-bold">
+Explore Now
+</a>
+</div>
+
+</section>
+
+<!-- ================= MARKETPLACE ================= -->
+<section id="marketplace" class="py-20">
+
+<div class="max-w-7xl mx-auto px-4">
+
+<h2 class="text-3xl font-bold mb-8 text-primary">Featured Listings</h2>
+
+<div id="marketplaceGrid"
+     class="grid md:grid-cols-2 lg:grid-cols-3 gap-8"></div>
+
+</div>
+
+</section>
+
+<!-- ================= WHY US ================= -->
+<section class="py-20 bg-white">
+
+<div class="max-w-7xl mx-auto px-4 text-center">
+
+<h2 class="text-3xl font-bold text-primary">Why Choose Us</h2>
+
+<div class="grid md:grid-cols-3 gap-8 mt-10">
+
+<div>🦁 Best Safaris</div>
+<div>🏨 Luxury Hotels</div>
+<div>🚗 Reliable Transport</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact" class="py-20 bg-slate-50">
+
+<div class="max-w-4xl mx-auto px-4 text-center">
+
+<h2 class="text-3xl font-bold text-primary">Contact Us</h2>
+
+<p class="mt-4">We are ready to help you plan your next trip</p>
+
+<div class="mt-6 space-y-2">
+<div>📞 +254705365075</div>
+<div>✉️ lennyotwombe87@gmail.com</div>
+<div>📍 Nairobi, Kenya</div>
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= BOOKING MODAL ================= -->
+<div id="bookingModal"
+     class="hidden fixed inset-0 bg-black/60 z-50 flex items-center justify-center">
+
+<div class="bg-white w-full max-w-md p-6 rounded-2xl relative">
+
+<button id="closeModal" class="absolute top-3 right-3 text-xl">✖</button>
+
+<h2 class="text-xl font-bold mb-4">Book Experience</h2>
+
+<input id="bookTitle"
+       class="w-full border p-3 rounded mb-3"
+       readonly>
+
+<input placeholder="Your Name" class="w-full border p-3 rounded mb-3">
+<input placeholder="Phone Number" class="w-full border p-3 rounded mb-3">
+<input type="date" class="w-full border p-3 rounded mb-3">
+
+<button class="w-full bg-gold text-primary font-bold py-3 rounded">
+Confirm Booking
+</button>
+
+</div>
+
+</div>
+
+<!-- ================= SCRIPTS ================= -->
+<script src="assets/js/marketplace.js"></script>
+<script src="assets/js/script.js"></script>
+
+</body>
+  </html>
